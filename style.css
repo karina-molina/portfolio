@@ -1,0 +1,158 @@
+/* ===== CORES USADAS NO SITE =====
+   Fundo da página:  #000000 (preto)
+   Texto:            #e8f1ff (branco azulado)
+   Azul principal:   #2f7bff
+   Azul claro:       #7db4ff (títulos e links)
+   Fundo dos cartões: #07142b (azul bem escuro)
+   Bordas:           #12408a
+*/
+
+/* ===== PÁGINA INTEIRA ===== */
+html {
+  scroll-padding-top: 70px; /* evita que o menu fixo cubra o título ao clicar em um link */
+}
+
+body {
+  background-color: #000000;
+  color: #e8f1ff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;                /* tira a margem padrão do navegador */
+}
+
+/* ===== TÍTULOS ===== */
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  color: #7db4ff;
+  border-bottom: 2px solid #12408a;
+  padding-bottom: 8px;
+}
+
+h3 {
+  color: #7db4ff;
+}
+
+h4 {
+  color: #2f7bff;
+  margin-bottom: 4px;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #7db4ff;
+}
+
+/* ===== MENU ===== */
+header {
+  background-color: #000000;
+  border-bottom: 1px solid #12408a;
+  position: sticky;         /* o menu fica fixo no topo ao rolar a página */
+  top: 0;
+}
+
+nav {
+  display: flex;            /* coloca os links lado a lado */
+  flex-wrap: wrap;          /* se não couber (celular), vai para a linha de baixo */
+  gap: 10px 25px;           /* espaço entre os links */
+  padding: 15px 20px;
+}
+
+nav a {
+  text-decoration: none;    /* tira o sublinhado */
+  color: #e8f1ff;
+}
+
+nav a:hover {
+  color: #2f7bff;           /* muda de cor quando o mouse passa por cima */
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+main {
+  max-width: 900px;         /* limita a largura para facilitar a leitura */
+  margin: 0 auto;           /* centraliza na tela */
+  padding: 0 20px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+/* ===== APRESENTAÇÃO ===== */
+#apresentacao {
+  display: flex;
+  flex-wrap: wrap;          /* no celular, a foto fica em cima do texto */
+  gap: 30px;
+  align-items: center;
+}
+
+.foto {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;        /* evita que a foto fique esticada */
+  border-radius: 50%;       /* deixa a foto redonda */
+  border: 3px solid #2f7bff;
+}
+
+.texto-apresentacao {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* ===== CARTÕES DOS PROJETOS ===== */
+.cartao {
+  background-color: #07142b;
+  border: 1px solid #12408a;
+  border-left: 5px solid #2f7bff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  border-top: 1px solid #12408a;
+  text-align: center;
+  padding: 20px;
+  color: #a9c2e8;
+}
+
+/* ===== IMAGENS DOS PROJETOS E CERTIFICADOS ===== */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;          /* as imagens passam para a linha de baixo se não couberem */
+  gap: 20px;
+}
+
+figure {
+  margin: 0;
+}
+
+.galeria figure {
+  flex: 1;
+  min-width: 250px;
+}
+
+img {
+  max-width: 100%;          /* a imagem nunca passa da largura da tela */
+}
+
+.galeria img,
+.certificado img {
+  border: 1px solid #12408a;
+  border-radius: 6px;
+}
+
+figcaption {
+  color: #a9c2e8;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+.certificado {
+  max-width: 400px;
+  margin-top: 15px;
+}
